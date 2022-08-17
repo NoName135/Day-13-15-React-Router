@@ -34,7 +34,7 @@ function App() {
         </div>
         {/* Routes, Route 練習區 */}
         <Routes>
-          <Route path="" element={<p>這是首頁</p>} />
+          <Route path="/" element={<p>這是首頁</p>} />
           <Route path="register" element={<Register />} />
           <Route path="login" element={<Login />} />
           <Route path="todo" element={<Todo />} />
