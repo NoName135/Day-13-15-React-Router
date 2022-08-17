@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-daily-task-router/static/css/main.8b6a6555.css",
+    "main.js": "/react-daily-task-router/static/js/main.34b5b43b.js",
+    "static/js/787.452db6da.chunk.js": "/react-daily-task-router/static/js/787.452db6da.chunk.js",
+    "index.html": "/react-daily-task-router/index.html",
+    "main.8b6a6555.css.map": "/react-daily-task-router/static/css/main.8b6a6555.css.map",
+    "main.34b5b43b.js.map": "/react-daily-task-router/static/js/main.34b5b43b.js.map",
+    "787.452db6da.chunk.js.map": "/react-daily-task-router/static/js/787.452db6da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b6a6555.css",
+    "static/js/main.34b5b43b.js"
+  ]
+}
