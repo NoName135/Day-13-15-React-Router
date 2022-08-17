@@ -1,8 +1,5 @@
 import './App.css';
-import {
-  HashRouter,
-  NavLink,
-} from 'react-router-dom';
+import { HashRouter, NavLink, Route, Routes } from 'react-router-dom';
 
 const Todo = () => {
   return <p>這是 Todo 頁面 
@@ -18,6 +15,8 @@ const Register = () => {
 function App() {
   return (
     <div className="container">
+      {/* <BrowserRouter>頁面路徑不會有「#」字，例如： /about。路由會需要後端協助處理，否則在 refresh 後就會出現 404，因為實際上 build 出來是沒有 about.html（只有 index.html）</BrowserRouter> */}
+      {/* <HashRouter>頁面路徑最前面會有個「#」，例如：/#/about。這代表路由會由前端進行模擬，像是部署在 GitHub Pages上就建議採用此模式。</HashRouter> */}
       <HashRouter>
         <div className="nav-link">
           <NavLink to="/">
@@ -34,6 +33,20 @@ function App() {
           </NavLink>
         </div>
         {/* Routes, Route 練習區 */}
+        <Routes>
+          <Route path="/" element={<p>這是首頁</p>} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/todo" element={<Todo />} />
+          <Route
+            path="*"
+            element={
+              <main style={{ padding: '1rem' }}>
+                <p>There's nothing here!</p>
+              </main>
+            }
+          />
+        </Routes>
         {/* 練習區 */}
       </HashRouter>
     </div>
