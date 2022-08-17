@@ -38,6 +38,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/todo" element={<Todo />} />
+          {/* 不存在的路由，404 Not Found 頁面 */}
           <Route
             path="*"
             element={
