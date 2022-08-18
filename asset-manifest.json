@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Day-13-React-Router-/static/css/main.8b6a6555.css",
-    "main.js": "/Day-13-React-Router-/static/js/main.4326b202.js",
-    "static/js/787.452db6da.chunk.js": "/Day-13-React-Router-/static/js/787.452db6da.chunk.js",
-    "index.html": "/Day-13-React-Router-/index.html",
-    "main.8b6a6555.css.map": "/Day-13-React-Router-/static/css/main.8b6a6555.css.map",
-    "main.4326b202.js.map": "/Day-13-React-Router-/static/js/main.4326b202.js.map",
-    "787.452db6da.chunk.js.map": "/Day-13-React-Router-/static/js/787.452db6da.chunk.js.map"
+    "main.css": "/Day-13-15-React-Router/static/css/main.8b6a6555.css",
+    "main.js": "/Day-13-15-React-Router/static/js/main.6733b90b.js",
+    "static/js/787.452db6da.chunk.js": "/Day-13-15-React-Router/static/js/787.452db6da.chunk.js",
+    "index.html": "/Day-13-15-React-Router/index.html",
+    "main.8b6a6555.css.map": "/Day-13-15-React-Router/static/css/main.8b6a6555.css.map",
+    "main.6733b90b.js.map": "/Day-13-15-React-Router/static/js/main.6733b90b.js.map",
+    "787.452db6da.chunk.js.map": "/Day-13-15-React-Router/static/js/787.452db6da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8b6a6555.css",
-    "static/js/main.4326b202.js"
+    "static/js/main.6733b90b.js"
   ]
 }
