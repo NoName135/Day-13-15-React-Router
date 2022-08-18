@@ -7,7 +7,7 @@ const Logout = () => {
   return (
     <button onClick = {() => {
       // replace: true; 點擊上一頁不會回去
-      navigate('/login', { replace: true});
+      navigate('/login', {replace: true});
     }}>登出
     </button>
   )
