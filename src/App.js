@@ -1,5 +1,5 @@
 import './App.css';
-import { HashRouter, NavLink, Route, Routes, useNavigate } from 'react-router-dom';
+import { HashRouter, NavLink, Route, Routes, useNavigate, useParams, Outlet, Link } from 'react-router-dom';
 
 const Logout = () => {
   // useNavigate() 用在路由的切換
@@ -13,20 +13,35 @@ const Logout = () => {
   )
 }
 
-const Todo = () => {
-  return (
-    <>
-      <p>這是 Todo 頁面</p>
-      <Logout/>
-    </>
-  )
+const Register = () => {
+  return <p>這是註冊頁面</p>;
 };
 const Login = () => {
   return <p>這是登入頁面</p>;
 };
-const Register = () => {
-  return <p>這是註冊頁面</p>;
+const Todo = () => {
+  return (
+    <>
+      <p>這是 Todo 頁面</p>
+      <Logout />
+    </>
+  );
 };
+const Post = () => {
+  return (
+    <>
+      <p>這是Post頁面</p>
+      <Link to="detail_Page1">
+        <button>進入詳細頁面</button>
+      </Link>
+      <Outlet />
+    </>
+  );
+};
+const PostId = () => {
+  let params = useParams();
+  return <p>Detail ID：{params.postId}</p>;
+}
 
 function App() {
   return (
@@ -47,6 +62,9 @@ function App() {
           <NavLink to="/todo">
             <p>Todo 頁面</p>
           </NavLink>
+          <NavLink to="/post">
+            <p>Post 頁面</p>
+          </NavLink>
         </div>
         {/* Routes, Route 練習區 */}
         <Routes>
@@ -54,6 +72,9 @@ function App() {
           <Route path="register" element={<Register />} />
           <Route path="login" element={<Login />} />
           <Route path="todo" element={<Todo />} />
+          <Route path="post" element={<Post />}>
+            <Route path=":postId" element={<PostId />} />
+          </Route>
           {/* 不存在的路由，404 Not Found 頁面 */}
           <Route
             path="*"
